@@ -106,7 +106,7 @@ angular.module('cgPrompt').run(['$templateCache', function($templateCache) {
   $templateCache.put('angular-prompt.html',
     "<div>\n" +
     "    <div class=\"modal-header\">\n" +
-    "        <button type=\"button\" class=\"close pull-right\" ng-click=\"$dismiss()\" aria-hidden=\"true\">×</button>\n" +
+    "        <button type=\"button\" class=\"close pull-right\" ng-click=\"$dismiss()\" aria-hidden=\"true\">&times;</button>\n" +
     "        <h4 class=\"modal-title\">{{options.title}}</h4>\n" +
     "    </div>\n" +
     "    <div class=\"modal-body\">\n" +
@@ -136,7 +136,7 @@ angular.module('cgPrompt').run(['$templateCache', function($templateCache) {
     "    <div class=\"modal-footer\">\n" +
     "        <button ng-repeat=\"button in options.buttons track by button.label\" class=\"btn btn-default {{button.class}}\" ng-class=\"{'btn-primary':button.primary}\" ng-click=\"buttonClicked(button)\">{{button.label}}</button>\n" +
     "    </div>\n" +
-    "</div>"
+    "</div>\n"
   );
 
 }]);
